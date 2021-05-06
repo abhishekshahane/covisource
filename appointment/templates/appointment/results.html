@@ -1,0 +1,19 @@
+{% extends "appointment/layout.html" %}
+{% block body %}
+    <table>
+        <tr>
+            <th >Address</th>
+            <th>Slots</th>
+            <th>Vaccine type</th>
+            <th>Date</th>
+            <th>Available slots</th>
+        </tr>
+        {% for opening in results %}
+            <tr>
+                {% for item in opening %}
+                    <td>{{ item }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
