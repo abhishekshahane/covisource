@@ -1,13 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto&display=swap');
 table{
     border: 1px solid black;
     border-collapse: collapse;
     padding:1px 1px 1px 1px;
 }
-th, td{
+th, td, tr{
     border: 1px solid black;
     padding:5px 5px 5px 5px;
 }
-tr{
-    border: 1px solid black;
-    padding:5px 5px 5px 5px;
+.topper-header{
+    font-family: 'PT Sans';
 }

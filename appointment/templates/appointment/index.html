@@ -2,18 +2,15 @@
 {% block body %}
     <form method="POST" action="{% url 'index' %}">
         {% csrf_token %}
-        <h2 style="text-align:center;padding-top:22.5vh;">Please enter your pincode!</h2>
-        <div>
-            <input type="text" name="pin"  style="margin:auto;display:block;" placeholder="Enter your PINCODE!">
+        <div class="form-group" style="padding-top:40vh;">
+                <input type="number" name="pin"  style="width:40%;display:block;margin:auto;" class="form-control" placeholder="Enter your PINCODE!" id="1" required>
         </div>
         <br>
-        <h2 style="text-align:center;">Please enter your minimum age of age band for vaccination!</h2>
-        <br>
-        <div>
-            <input type="text" name="age"  style="margin:auto;display:block;" placeholder="Enter your minimum age!">
+        <div class="form-group">
+            <input type="text" name="age"  style="width:40%;display:block;margin:auto;" class="form-control" placeholder="Enter your minimum age!" required>
         </div>
         <br>
         <br>
-        <input type="submit"  style="margin:auto;display:block;">
+        <input type="submit"  class="btn btn-success" style="margin:auto;display:block;">
     </form>
 {% endblock %}
